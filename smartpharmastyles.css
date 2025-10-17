@@ -6,8 +6,10 @@ body{
   background-size: cover;
   background-blend-mode: multiply;
   background-origin: padding-box;
-  font-family: Georgia;
+   font-family: 'Open Sans', sans-serif;;
 }
+
+
   *{
     font-size: 18px;
   }
@@ -15,15 +17,79 @@ body{
    font-size: 40px;
    color:  navy;
   }
+  
+  
   #Welcome_text {
   font-size: 23px;
-  color: #191970;
+  color: black;
 }
+
+
 #fill_text {
   font-size: 20px;
   
 }
 
-.title {
-	color: #5C6AC4;
+
+label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
+
+
+input {
+  width: 109%;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+
+select {
+  width: 28%;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+
+input:focus {
+  border-color: #lightblue;
+  outline: none;
+}
+button {
+  background-color: blue ;
+  width: 15%;
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 8px;
+  font-family: 'open sans',Sans-Serif;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
