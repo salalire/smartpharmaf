@@ -6,8 +6,8 @@
   </head>
   <body>
     <h2>Welcome to SmartPharma Registration</h2>
-    <p>Register now to bring your pharmacy into the digital age. SmartPharma empowers you to showcase products, manage inventory, and reach more customers through a user-friendly online platform. Join today and transform your local pharmacy into a smart, accessible healthcare hub.</p>
-<p>Please fill out the form below to register your pharmacy. All fields marked with * are required.</p>
+    <p id="Welcome_text">Register now to bring your pharmacy into the digital age. SmartPharma empowers you to showcase products, manage inventory, and reach more customers through a user-friendly online platform. Join today and transform your local pharmacy into a smart, accessible healthcare hub.</p>
+<p id="fill_text">Please fill out the form below to register your pharmacy. All fields marked with * are required.</p>
 
     <form action="smartpharmapage.php" method="post" onsubmit="return submitcase()">
       
@@ -118,6 +118,12 @@
     </form>  
     
     
+    <label for="service-agrement">
+    <input type="checkbox" id="service-agrement" name="service-agrement">
+  I agree to the <a href="Service_terms.html" target="_blank">Terms of Service</a>
+  </label>
+  
+  
     <script>
       function check_password(){
         const password=document.getElementById("password").value;
@@ -131,6 +137,16 @@
           output_message.textContent="your password is not matching";
           return false;
         }
+      }
+      
+      
+      function validateAgrement(){
+        const check_agrement=document.getElementById("service-agrement");
+        if(!check_agrement.checked){
+          alert('You must agree to the Terms of Service before submitting.');
+          return false;
+        }
+        return true;
       }
       
       
@@ -159,7 +175,8 @@
        function submitcase(){
          const isvalidated=validate_password();
          const ischecked=check_password();
-         if(ischecked&&isvalidated){
+         const isagreed=validateAgrement();
+         if((ischecked&&isvalidated)&&isagreed){
           return true; 
          }
          else{
