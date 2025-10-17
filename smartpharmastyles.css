@@ -1,0 +1,29 @@
+body{
+  background-image: url("https://t3.ftcdn.net/jpg/02/15/50/80/360_F_215508033_7TBsQ0bLXcd9myCDDbwJCjsbb5DWzs6w.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-origin: padding-box;
+  font-family: Georgia;
+}
+  *{
+    font-size: 18px;
+  }
+  h2{
+   font-size: 40px;
+   color:  navy;
+  }
+  #Welcome_text {
+  font-size: 23px;
+  color: #191970;
+}
+#fill_text {
+  font-size: 20px;
+  
+}
+
+.title {
+	color: #5C6AC4;
+}
