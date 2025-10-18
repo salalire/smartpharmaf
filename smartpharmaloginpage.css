@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  font-family: "open sans" Sans-Serif;
+  padding: 0;
+  box-sizing:border-box;
+  
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  background-color: #000; 
+}
+
+.login_box{
+  position: relative;
+  width: 450px;
+  height: 500px;
+  background-color: lightblue;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+h1{
+  position: relative;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+}
+
+.input_box{
+  width: 330px;
+  margin: 30px 0;
+ 
+}
+
+
