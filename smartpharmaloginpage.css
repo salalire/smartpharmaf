@@ -104,6 +104,7 @@ padding: 0 25px 0 5px;
 .remember a:hover{
   cursor: pointer;
   text-decoration: underline;
+  color: blue;
 }
 
 button{
@@ -117,4 +118,25 @@ button{
   font-size: 1.1em;
   cursor: pointer;
   font-weight: 500;
+}
+
+.registor_link{
+  margin-top: 15px;
+  margin-left: 13px;
+  color: #000;
+  font-size: 1.2em;
+  justify-content: space-between;
+  
+}
+
+.registor_link a{
+  color: #000;
+  text-decoration: none;
+  
+}
+
+.registor_link a:hover{
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
 }
