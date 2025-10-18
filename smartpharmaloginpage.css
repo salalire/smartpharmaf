@@ -5,12 +5,17 @@
   box-sizing:border-box;
   
 }
-body {
-  min-height: 100vh;
+section {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
-  background-color: #000; 
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .login_box{
@@ -118,6 +123,10 @@ button{
   font-size: 1.1em;
   cursor: pointer;
   font-weight: 500;
+}
+
+button:hover{
+  color: blue;
 }
 
 .registor_link{
