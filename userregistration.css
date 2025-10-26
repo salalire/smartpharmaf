@@ -1,0 +1,17 @@
+body{
+  background-position: flex;
+  background-image: url('https://img.freepik.com/premium-photo/medical-supplies-pills-blue-background-healthcare-medicine-concept_94064-27180.jpg');
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: movebg 5s linear 0s infinite;
+}
+
+@keyframes movebg{
+  
+}
+input{
+  width: 150px;
+  border-left: 8px;
+ 
+}
