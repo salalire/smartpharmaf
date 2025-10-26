@@ -7,7 +7,7 @@
   </head>
   <body>
       <h1 class="title">Wellcome To The Smartpharma  User Registration ! </h1>
-<form action="Smartpharma.php" method="post">
+<form action="Smartpharma.php" method="post" onsubmit="return password_check()">
   
   
   <small>Please enter a valid email address. This will be used for account verification and communication.</small>
@@ -62,6 +62,7 @@
   </div>
   
   
+  <p id="Error_message" style="color:red"></p>
   <small>Click to clear all fields and start over.</small>
 
   <div class="reseat">
@@ -76,6 +77,24 @@
     <button type="submit">Registor</button>
   </div>
 </form>
-      <script src="script.js"></script>
+
+
+      <script >
+        
+        function password_check(){
+          const password=document.getElementById("password").value;
+          const Conform_password=document.getElementById("user_password").value;
+          const Error_message=document.getElementById("Error_message");
+          
+          if(password==Conform_password){
+            Error_message.textContent="";
+            return true;
+          }
+          else{
+            Error_message.textContent="Your passwordis not muching Please check it";
+            return false;
+          }
+        }
+      </script>
   </body>
 </html>
