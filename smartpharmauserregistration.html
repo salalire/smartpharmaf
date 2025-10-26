@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration page!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Wellcome To The Smartpharma  User Registration ! </h1>
+<form action="Smartpharma.php" method="post">
+  
+  
+  <small>Please enter a valid email address. This will be used for account verification and communication.</small>
+
+  <div class="email">
+  <label for="useremail">Email:</label>
+  <input type="email" name="useremail" id="useremail" required="">
+  </div>
+  
+  <small>Optional: Include your phone number for SMS alerts or account recovery.</small>
+
+  <div class="phone_number">
+    <label for="phone">Phone:</label>
+    <input type="tel" name="phone" id="phone" >
+  </div>
+  
+  
+  <small>Choose a unique username. It must be 4–15 characters and can include letters and numbers.</small>
+
+  <div class="username">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+  </div>
+  
+  <small>Create a strong password with at least 8 characters, including a number and a special symbol.</small>
+
+  <div class="password">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  </div>
+  
+  
+  <small>Re-enter your password to confirm. It must match the password above.</small>
+
+  <div class="conform_password">
+    <label for="user_password">Conform_password:</label>
+    <input type="password" id="user_password" name="user_password">
+  </div>
+  
+  
+  <small>Click to clear all fields and start over.</small>
+
+  <div class="reseat">
+    <button type="reset">Reset</button>
+  </div>
+ 
+ 
+ <small>Click to submit your registration and create your Smartpharma account.</small>
+
+ 
+  <div class="registor">
+    <button type="submit">Registor</button>
+  </div>
+</form>
+      <script src="script.js"></script>
+  </body>
+</html>
