@@ -3,6 +3,7 @@
   <head>
     <title>User Registration page!</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/7f56dcb44b.js" crossorigin="anonymous"></script>
   </head>
   <body>
       <h1 class="title">Wellcome To The Smartpharma  User Registration ! </h1>
@@ -11,14 +12,19 @@
   
   <small>Please enter a valid email address. This will be used for account verification and communication.</small>
 
+
   <div class="email">
+    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
   <label for="useremail">Email:</label>
-  <input type="email" name="useremail" id="useremail" required="">
+  <input type="email" name="useremail" id="useremail" required>
   </div>
   
   <small>Optional: Include your phone number for SMS alerts or account recovery.</small>
 
   <div class="phone_number">
+    <span class="icon">
+      <i class="fa-solid fa-square-phone"></i>
+    </span>
     <label for="phone">Phone:</label>
     <input type="tel" name="phone" id="phone" >
   </div>
@@ -27,6 +33,9 @@
   <small>Choose a unique username. It must be 4–15 characters and can include letters and numbers.</small>
 
   <div class="username">
+    <span class="icon">
+      <i class="fa-solid fa-circle-user"></i>
+    </span>
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" min="4" max="15">
   </div>
@@ -34,6 +43,9 @@
   <small>Create a strong password with at least 8 characters, including a number and a special symbol.</small>
 
   <div class="password">
+    <span class="icon">
+      <i class="fa-solid fa-lock"></i>
+    </span>
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" minlength="8" required="">
   </div>
@@ -42,6 +54,9 @@
   <small>Re-enter your password to confirm. It must match the password above.</small>
 
   <div class="conform_password">
+    <span class="icon">
+      <i class="fa-solid fa-lock"></i>
+    </span>
     <label for="user_password">Conform_password:</label>
     <input type="password" id="user_password" name="user_password" minlength="8" required="">
   </div>
