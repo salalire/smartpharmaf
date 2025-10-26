@@ -11,7 +11,19 @@ body{
   
 }
 input{
-  width: 150px;
+  width: 40%;
+  border: 1px solid;
+  border-color: skyblue;
   border-left: 8px;
+  border-right: 0px;
+  color: black;
+ font-family: "open sans" Sans-Serif;
+ font-size: .9em;
  
+}
+label{
+  font-family: open sans Sans-Serif; 
+  font-size: .9em;
+  border-left: 8px;
+  border-bottom: 2px;
 }
