@@ -1,7 +1,7 @@
 body{
   background-position: flex;
   background-image: url('https://img.freepik.com/premium-photo/medical-supplies-pills-blue-background-healthcare-medicine-concept_94064-27180.jpg');
-  background-size: 1100px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation: movebg 5s linear 0s infinite;
@@ -22,8 +22,57 @@ input{
  
 }
 label{
-  font-family: open sans Sans-Serif; 
+  font-family: "open sans" Sans-Serif; 
   font-size: .9em;
   border-left: 8px;
   border-bottom: 2px;
 }
+
+
+button{
+  text-align: center;
+  font-display: flex;
+  font-family: "open sans" Sans-Serif;
+  font-size: .9em;
+  width: 180px;
+  border-radius: 12px;
+  border: none;
+  border-left: 80px;
+  padding: 12px 20px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  
+}
+button::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#333 ;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  
+  
+}
+
+button::before{
+  content: "";
+  background: linear-gradient( 45deg,
+  #FF0000,#FF7300,#FFFB00,#00FFD5,
+  #002BFF,#FF00C8,#FF0000,#48FF00);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(10px);
+}
+
+
