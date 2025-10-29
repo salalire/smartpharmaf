@@ -42,10 +42,11 @@ small{
 .input_box label{
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 40px;
 transform: translateY(-50%);
-font-size: 1em;
+font-size: 1.2em;
 color: #000;
+right: 8px;
 pointer-events: none;
 transition: .5s;
 padding: 0 25px 0 5px;
@@ -55,6 +56,11 @@ padding: 0 25px 0 5px;
 
 .input_box:focus-within label {
   top: -5px;
+  
+}
+
+.input_box:focus-within .icon {
+  top: -30px;
   
 }
 
@@ -71,7 +77,6 @@ padding: 0 25px 0 5px;
 
 .input_box .icon{
   position: absolute;
-  right: 8px;
   font-size: 1.5em;
   color: #000;
   line-height: 57px;
