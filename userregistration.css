@@ -5,28 +5,80 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation: movebg 5s linear 0s infinite;
+  
 }
 
 @keyframes movebg{
   
 }
-input{
-  width: 40%;
-  border: 1px solid;
-  border-color: skyblue;
-  border-left: 8px;
-  border-right: 0px;
-  color: black;
- font-family: "open sans" Sans-Serif;
- font-size: .9em;
+
+
+
+small{
+  position: relative;
+  font-display: block;
+  font-family: "open sans" Sans-Serif;
+  font-size: 1.5em;
+  color: #000;
+  border-left: 20px;
+  padding-left: 20px;
+  left: 20px;
+  border-top:20px ;
+  border-bottom:20px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+
+.input_box{
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
  
 }
-label{
-  font-family: "open sans" Sans-Serif; 
-  font-size: .9em;
-  border-left: 8px;
-  border-bottom: 2px;
+
+.input_box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+transform: translateY(-50%);
+font-size: 1em;
+color: #000;
+pointer-events: none;
+transition: .5s;
+padding: 0 25px 0 5px;
+
 }
+
+
+.input_box:focus-within label {
+  top: -5px;
+  
+}
+
+.input_box input{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 1em;
+}
+
+
+.input_box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.5em;
+  color: #000;
+  line-height: 57px;
+  
+}
+
+
 
 
 button{
@@ -62,7 +114,7 @@ button::after{
 
 button::before{
   content: "";
-  background: linear-gradient( 45deg,
+  background: linear-gradient( 9deg,
   #00FFFF,  
   #00BFFF,  
   #7CFC00,  
