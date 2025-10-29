@@ -73,6 +73,22 @@ button::before{
   width: calc(100% + 4px);
   height:  calc(100% + 4px);
   filter: blur(10px);
+  transition: opacity .3s ease-in-out;
+  animation: movement 20s linear infinite;
+  border-radius: 10px;
+  opacity: 0;
 }
+
+@keyframes movement{
+  0%{ background-position:0 0;}
+  50%{ background-position:400% 0;}
+  100%{ background-position:0 0;}
+  
+}
+
+button:hover::before{
+  opacity: 1;
+}
+
 
 
