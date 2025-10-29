@@ -63,8 +63,15 @@ button::after{
 button::before{
   content: "";
   background: linear-gradient( 45deg,
-  #FF0000,#FF7300,#FFFB00,#00FFD5,
-  #002BFF,#FF00C8,#FF0000,#48FF00);
+  #00FFFF,  
+  #00BFFF,  
+  #7CFC00,  
+  #FFFF00,  
+  #FF69B4,  
+  #FF4500,  
+  #1E90FF,  
+  #00FF7F   
+);
   position: absolute;
   top: -2px;
   left: -2px;
