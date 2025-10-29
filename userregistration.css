@@ -91,4 +91,14 @@ button:hover::before{
 }
 
 
+button:hover::after{
+  background: transparent;
+}
+
+button:active{
+  color: #000;
+  font-weight: bold;
+}
+
+
 
